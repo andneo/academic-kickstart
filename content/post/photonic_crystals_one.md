@@ -1,8 +1,8 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-title: "Building A Neural Network from Scratch"
-subtitle: "Getting Familiar with Python"
+title: "Building A Neural Network"
+subtitle: "1 - Getting Familiar with Python"
 summary: "This is the first in a series of posts where I'll take you though building a basic neural network from scratch using Python."
 authors: []
 tags: []
