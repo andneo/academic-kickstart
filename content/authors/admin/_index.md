@@ -18,11 +18,13 @@ organizations:
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests is mainly in the realm of understanding programmable matter. Get in touch if there's anything you see here that interests you.
+bio: My research interests are generally in the realm of understanding programmable matter. Get in touch if there's anything you see here that interests you or you want to share something interesting with me.
 
 interests:
-- Colloidal Self-Assembly
+- Statistical Mechanics
+- Self-Assembly
 - Photonic Crystals
+- Numerical Optimisation
 - Machine Learning
 
 education:
@@ -70,4 +72,4 @@ user_groups:
 - Visitors
 ---
 
-I am currently a PhD student in Chemistry at the University of Birmingham.
+<!--- My random walk through life has somehow led me to pursue a PhD in Chemistry, where my research interests broadly lie in the study of self-organising systems. I am particularly interested in understanding why systems spontaneously order themselves (or in some cases why they don't). I do this mainly from the comfort of my desk chair, where I develop code to perform numerical simulations and try to apply principles from statistical mechanics. I haven't formally been trained in statistical physics and so I decided to put together this site to act as a public digital scrapbook. Over the course of my PhD I want to populate this site with notes in statistical mechanics, quantum mechanics, photonics, machine learning and whatever else I come across that interests me. The idea is that this forces me to really understanding what I'm trying to learn and hopefully whoever stumbles across this site might learn something as well. --->
