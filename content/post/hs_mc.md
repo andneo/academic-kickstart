@@ -3,7 +3,7 @@
 
 title: "Hard-Disk Monte Carlo"
 subtitle: "2D Monte Carlo Simulation in Javascript"
-summary: "This is a test."
+summary: "Performing particle simulations in the browser sing javascript."
 authors: []
 tags: []
 categories: []
