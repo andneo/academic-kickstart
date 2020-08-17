@@ -14,9 +14,9 @@ menu:
 weight: 2
 ---
 
-A key component of neural networks is an optimisation algorithm. 
-These are usually iterative algorithms used to minimise the error our neural network model makes.
-Usually, in books and notes that I've read, this is introduced after a big picture style introduction.
+Optimisation is a ubiquitous process, people do it everyday. A classic example would be: _How do I get somewhere as (**fast, cheap, environmentally friendly**) as possible?_ 
+Nature optimises too, a big part of what I do in my PhD is finding out how systems of particles optimise their potential energy. 
 
-But these algorithms are tools to be used to build a neural network, and I personally prefer to understand how they work first.
-So I am starting these notes off with an introduction to gradient-based optimisation algorithms and automatic differentiation. 
+Needless to say optimisation is an important process, and quite a bit of effort has been dedicated to developing algorithms that do it well.
+Optimisation algorithms form a key component of neural networks, as we will see. 
+The first section of these notes introduce gradient-based optimisation algorithms, and how to implement in Python. 
