@@ -24,8 +24,8 @@ Consider, for now, the following arbitrary function where $\\textbf{x}=(x,y)^{T}
 $$
 z = f(x,y) = x^2 - y^2
 $$
-I have plotted this function for $x,y\in[-2,2]$ below, and we can see (from the 3D representation on the left) it has a saddle shape.
-When $\textbf{x}=(0,0)^{T}$, $f(x,y)$ is at a *minimum* in the xz-plane and at a *maximum* in the yz-plane.
+I have plotted this function for $x,y\in[-2,2]$ below, and we can see (from the 3D representation on the left) it has a [saddle](https://en.wikipedia.org/wiki/Saddle_point) shape.
+When $\textbf{x}=(0,0)^{T}$, $f(x,y)$ is at a [minimum](https://en.wikipedia.org/wiki/Maxima_and_minima) in the xz-plane and at a [maximum](https://en.wikipedia.org/wiki/Maxima_and_minima) in the yz-plane.
 {{< figure library="true" src="deep_learning/images/gradient.png" title="" >}}
 
 On the right I've shown a 2D [contour plot](https://www.statisticshowto.com/contour-plots/) of the same function, as well as the *_gradient_*.
@@ -34,18 +34,20 @@ The gradient for this function is given by:
     \textbf{g}(\textbf{x}) \equiv \nabla f(x,y) &= \Big(\dfrac{\partial f}{\partial x}, \dfrac{\partial f}{\partial y}\Big)^{T} \\\\
     &= \Big(2x, -2y\Big)^{T}
 \end{align}
-The gradient defines a vector field, which points in the direction of maximum rate of increase for the corresponding function.
+The gradient defines a [vector field](https://en.wikipedia.org/wiki/Vector_field), which points in the [direction of maximum rate of increase](http://mathonline.wikidot.com/the-maximum-rate-of-change-at-a-point-on-a-function-of-sever) for its corresponding function.
 This is an important property of the gradient which we are going to exploit.
 
 ## Optimisation Problems
-Formally an optimisation problem can be written as:
+We are interested in solving the general optimisation problem:
 $$
     \\min_{\\textbf{x}\\in\\mathbb{R}^{n}}f(\\textbf{x})
 $$
-In reality, they iteratively update an initial guess for $\\textbf{x}$ until they satisfy some termination condition.
-The difference between them comes from how we move from $\\textbf{x}\_{i}$, at iteration $i$ of our algorithm, to $\\textbf{x}\_{i+1}$.
+In other words, we want to find a set of coordinates which correspond to a [minimum](https://en.wikipedia.org/wiki/Maxima_and_minima) of the function $f(\\textbf{x})$.
+We are going to do this using an optimisation algorithm.
+There are different algorithms to choose from, but they all follow the same general process: iteratively update an initial guess for $\\textbf{x}$ until some termination condition is satisified.
 
-We want to write some Python code that can optimise arbitrary functions.
+The difference between different algorithms comes from how we move from $\\textbf{x}\_{i}$, at iteration $i$ of our algorithm, to $\\textbf{x}\_{i+1}$.
+We want to write some Python code that can optimise arbitrary functions using different optimisation algorithms.
 The first step is to define a ``` Class ```:
 ```python
 class Optimise:
